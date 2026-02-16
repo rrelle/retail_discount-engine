@@ -38,7 +38,9 @@ console.log(applyDiscount({ name: 'Book', category: 'student', price: 20 })); //
 const customerTypes = ['regular', 'student', 'senior'];
 for (let i = 0; i < 3; i++) {
     let total = 0;
-}
+
+
+
 for (const product of products) {
     if (product.inventory > 0) {
         total += product.price;
@@ -46,6 +48,9 @@ for (const product of products) {
     }
 }
 console.log(`Total price for customer type ${customerTypes[i]}: $${total.toFixed(2)}`);
+}
+
+
 
 console.log("\nSingle Product Details:");
 for (const product of products) {

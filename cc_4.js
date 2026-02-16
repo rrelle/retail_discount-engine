@@ -24,3 +24,12 @@ for (const product of products) {
     }
 }
 console.log(products);
+function applyDiscount(product) {
+    if (product.category === 'student') {
+        product.price = product.price * 0.95; // Apply a 5% discount for students
+    }
+    else if (product.category === 'senior') {
+        product.price = product.price * 0.93; // Apply a 7% discount for seniors
+    }
+    else return product.price; // No discount for other categories
+}

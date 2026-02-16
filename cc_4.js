@@ -47,3 +47,19 @@ for (const product of products) {
 }
 console.log(`Total price for customer type ${customerTypes[i]}: $${total.toFixed(2)}`);
 
+console.log("\nSingle Product Details:");
+for (const product of products) {
+    console.log(product);
+}
+const singleProduct = products[0]; // Get the first product
+console.log("\nDetails of Single Product:");
+console.log(singleProduct);
+
+console.log("\nAll Products After Inventory:")
+for (const product of products) {
+    console.log(product);
+
+    for (const [key, value] of Object.entries(product)) {
+        console.log(`${key}: ${value}`);
+    }
+}

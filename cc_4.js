@@ -33,3 +33,17 @@ function applyDiscount(product) {
     }
     else return product.price; // No discount for other categories
 }
+console.log(applyDiscount({ name: 'Book', category: 'student', price: 20 })); // Should apply a 5% discount
+
+const customerTypes = ['regular', 'student', 'senior'];
+for (let i = 0; i < 3; i++) {
+    let total = 0;
+}
+for (const product of products) {
+    if (product.inventory > 0) {
+        total += product.price;
+        product.inventory -= 1; // Decrease inventory by 1 for each product sold
+    }
+}
+console.log(`Total price for customer type ${customerTypes[i]}: $${total.toFixed(2)}`);
+
